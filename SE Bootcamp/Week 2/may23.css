@@ -1,0 +1,90 @@
+body{
+    background-color: aquamarine;
+}
+
+/* slideshow animation */
+.stage{
+    width:100%;
+    border: 2px solid peru;
+    height: 300px;
+    margin-bottom: 10%; 
+    overflow: hidden;
+}
+
+.slidewrapper{
+    width:400%;
+    height:100%;
+    animation: slideshow  10s infinite;
+}
+
+.slide
+{ 
+/*  */
+    width:25%;
+    height:100%;
+    float:left;
+}
+
+
+.s1{background-color: rgb(255, 205, 210);}
+.s2{background-color: azure;}
+.s3{background-color: rgb(221, 205, 255);}
+.s4{background-color: blanchedalmond;}
+/* bird animation */
+
+ @keyframes slideshow {
+    0%{margin-left: 0%; }
+    25%{margin-left: -100%;}
+    50%{margin-left: -200%;}
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+} 
+
+
+
+
+.herobox{
+    position: relative;
+    background-color: blueviolet;
+    height: 300px;
+    background-image: url(nyc.jpg);
+    background-size: 100% 100%; 
+}
+.herobox .bird1 {
+position: absolute;
+bottom:10px;
+left:10px;
+width:30%;
+height:30%;
+/* border:2px solid red; */
+padding: 4px;
+animation-name: flybird;
+animation-duration: 1s;
+animation-iteration-count: infinite;
+animation-delay: 1s;
+}
+
+.bird2{
+position: absolute;
+bottom:10px;
+left:10px;
+width:30%;
+height:30%;
+border:2px solid red; 
+padding: 4px;
+animation: flybird 4s 1s infinite linear;
+}
+.herobox div img{ 
+    width:100%;
+    height:100%;
+    border-radius: 50%;
+    }
+
+@keyframes flybird {
+    0%{bottom:10px;left:10px;}
+    50% {bottom:100px;left:100px; width:10%; height:30%;}
+    53% {bottom:100px;left:100px; width:10%; height:30%; transform: rotate(-90deg);}
+    56% {bottom:100px;left:100px; width:10%; height:30%; transform: rotate(90deg);}
+    60% {bottom:100px;left:100px; width:10%; height:30%; transform: rotate(-30deg);}
+    100% {bottom:10px;left:400px;}
+}

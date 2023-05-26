@@ -1,0 +1,52 @@
+body{
+    background-color: blanchedalmond;
+}
+
+
+.myownbox{
+    width:33%;
+    border:3px dashed palevioletred;
+    height:400px;
+    margin-bottom:10%;
+}
+.card{
+    background-color: aqua;
+    width:16%;
+    height:300px;
+    float: left;
+    margin-left: 2%;
+    text-align: center;
+}
+
+.btn1{
+  background-color: orange;
+  padding: 10px;
+  text-decoration: none;
+  border: 3px solid red;
+  border-radius: 10px;
+}
+
+.mdlwindow{
+opacity:0;
+pointer-events: none;
+background-color: rgba(111, 115, 112, 0.5);
+position: fixed;
+left:0;
+bottom:0;
+right:0;
+top:0;
+}
+
+.mdlwindow div{
+    background-color: azure;
+    width:50%;
+    margin:auto;
+    padding: 10%;
+    border-radius: 10px;
+    margin-top: 10%;
+}
+
+.mdlwindow:target{
+    opacity:1;
+    pointer-events: all;
+}
