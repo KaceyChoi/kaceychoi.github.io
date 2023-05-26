@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- <meta charset="UTF-8"> -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ASSIGNMENT 2</title>
+    <style>
+div {
+    border:2px;
+    border-style: solid;
+    border-color: red;
+}
+
+        p.hotpk {
+            color:hotpink;
+            font-family:Arial, Helvetica, sans-serif
+        }
+        p.pk {
+            color:pink;
+            font-family:'Courier New', Courier, monospace
+        }
+        p.lightpk {
+            color:lightpink;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+        }
+        /* Gallery-Style */
+        div.gallery {
+  margin: 5px;
+  border: 2px solid yellow;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 2px solid yellowgreen;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+    </style>
+    </head>
+
+    <body>
+        <ul style="list-style-type:none", align="center">
+            <li><a href="Assignment2_May19.html" target="_top">HOME</a></li>
+            <li><a href="Assignment2_May19_about.html">ABOUT</a></li>
+            <li><a href="Assignment2_May19_book.html">BOOK</a></li>
+            <li><a href="Assignment2_May19_contact.html">CONTACT</a></li>
+        </ul>
+        
+<!-- search bar -->
+        <input type="search" id="mySearch" placeholder="search for this website"></input>  
+        <button onclick="myFunction()">search</button>
+        <p id="demo"></p>
+        <script>
+            function myFuction() {
+                var x=document.getElementById("mySearch").placeholder;
+                document.getElementById("demo").innerHTML=x;
+            }
+        </script>
+
+<!-- Table -->
+<style>
+    table, th, td {
+        border: 2px solid black;
+                
+        }
+        </style>
+
+    <Table style="width:50%">
+        <tr style="background-color: yellow">
+            <td></td>
+            <th>Withdraw</th>
+            <th>Credit</th>
+            <th>Balance</th>
+            <tr style="background-color: lightpink">
+                <th>September</th>
+                <td style="text-align:center">$250</td>
+                <td style="text-align:center">$660</td>
+                <td style="text-align:center">$410</td>
+            </tr>
+        </tr>
+    </Table><br>
+ <!-- Image -->
+    <img src="https://i.natgeofe.com/n/874df281-d3e0-489a-98c0-6b840023b828/newyork_NationalGeographic_2328428_4x3.jpg" width="200">        
+
+<br>
+
+<!-- Paragraph -->
+<div>
+<p class="hotpk">This is the hotpink paragraph, font family is Arial</p>
+<p class="pk">This is the pink paragraph, font family is Courier</p>
+<p class="lightpk">This is the lightpink paragraph Font family is Corsiva</p>
+<button>This is another button</button>
+</div>
+<br>
+<!-- Form -->
+<p>	&lsaquo;p&rsaquo;Study button, input, form and textarea elements&lsaquo;/p&rsaquo;</p>
+<form action="/action_page.php">
+    
+    <textarea id="review" name="review" rows="4" cols="50">Test text area.</textarea>
+    <br>
+    <input type="submit" value="Submit">
+  </form>
+  <!-- Assignment1 -->
+  <P><h2>Assignment 1</h2></P>
+  <p> Hey! It looks like a paragraph, but there is a block/box here too. Find that HTML element other than &lsaquo;p&rsaquo; and &lsaquo;h&rsaquo;</p>
+
+  <P><a href="https://www.google.com">This is a link to Google</a>
+</P>
+<img src="https://i.natgeofe.com/n/874df281-d3e0-489a-98c0-6b840023b828/newyork_NationalGeographic_2328428_4x3.jpg" width="200">        
+<br><i>Email me by clicking on <a href="jondoe@gmail.com">Jon Doe.</a>
+<br><address>Visit us at:<br>
+<a href="https://disneyworld.disney.go.com/">Disney World</a><br>
+Box 678, Disneyland
+USA</i></address>
+<br><br>
+<!-- Gallery: 3 Images -->
+<div class="gallery">
+    <a target="_blank" href="https://www.allrecipes.com/thmb/qK_4-b4KkWEcUw44nprldp7mkuo=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/228240-BibimbapKoreanRiceWithMixedVegtables-ddmfs-4X3-0667-70784fdd28904e2daab245c029f978ee.jpg">
+      <img src="https://www.allrecipes.com/thmb/qK_4-b4KkWEcUw44nprldp7mkuo=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/228240-BibimbapKoreanRiceWithMixedVegtables-ddmfs-4X3-0667-70784fdd28904e2daab245c029f978ee.jpg" alt="Bibimbap " width="600" height="400">
+    </a>
+    <div class="desc"><strong>Bibimbap</strong><br>(Korean Rice With Mixed Vegetables)</div>
+  </div>
+  
+  <div class="gallery">
+    <a target="_blank" href="https://www.allrecipes.com/thmb/e4X3kldX5-SEnQBseEgq7fObnlA=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/4468800-3f578da6107c4a2cb89e16d1b5114bca.jpg">
+      <img src="https://www.allrecipes.com/thmb/e4X3kldX5-SEnQBseEgq7fObnlA=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/4468800-3f578da6107c4a2cb89e16d1b5114bca.jpg" alt="Japchae" width="600" height="400">
+    </a>
+    <div class="desc"><strong>Japchae</strong><br>(Korean Glass Noodles)</div>
+  </div>
+  
+  <div class="gallery">
+    <a target="_blank" href="https://www.allrecipes.com/thmb/kDsi4maWmncHX2lU5lecMXULr-M=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/5692627-3107403012b648979a10780ddd942356.jpg">
+      <img src="https://www.allrecipes.com/thmb/kDsi4maWmncHX2lU5lecMXULr-M=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/5692627-3107403012b648979a10780ddd942356.jpg" alt="Korean BBQ Short Ribs" width="600" height="400">
+    </a>
+    <div class="desc"><strong>Galbi</strong><br>(Korean BBQ Short Ribs)</div>
+
+  </div>
+        </body>
+</html>
